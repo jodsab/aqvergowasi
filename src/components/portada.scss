@@ -1,0 +1,103 @@
+.portada_container{
+    width: 100%;
+    min-height: 80vh;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .msj_presentacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                text-align: center;
+                font-weight: 1200;
+            }
+
+            p{
+                margin-top: 0;
+                margin-bottom: 40px;
+                width: 400px;
+                text-align: center;
+                font-size: 18px;
+            }
+            button{
+                color: white;
+                background-color: #ef3737;
+                padding: 10px 20px;
+                border: 0;
+                width: 150px;
+                font-size: 17px;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: red;
+            }
+        }
+    }
+
+    .div_login_modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    
+        .ventanareal{
+            position: relative;
+    
+            .close_btn{
+                cursor: pointer;
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                color: #ef3737;
+                font-size: 40px;
+                top: -20px;
+                right: -25px;
+            }
+            .close_btn:hover{
+                color: #1e1e1e;
+            }
+        }
+    
+    
+    }
+    
+    .div_login_modal.show{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .portada_container{
+        width: 95%;
+        height: 85vh;
+        .presentacion{
+            .msj_presentacion{
+                p{
+                    width: 85%;
+                }
+            }
+        }    
+        .logo_css_container{
+            display: none;
+        
+        }
+    }
+}

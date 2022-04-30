@@ -1,0 +1,12 @@
+.espacio_container{
+    
+    min-height: 100px;
+}
+
+@media only screen and (max-width: 650px){
+    .espacio_container{
+        display: block;
+        min-height: 50px;
+        width: 100vw;
+    }
+}

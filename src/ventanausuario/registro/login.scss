@@ -1,0 +1,44 @@
+.login_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 30px auto;
+
+    .form_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: auto;
+
+        div{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        label{
+            font-size: 17px;
+        }
+        input{
+            padding: 7px;
+            border: 1px solid #1e1e1e;
+            border-radius: 8px;
+        }
+        input:focus{
+            border: 1px solid #ef3737;
+            outline: none;
+        }
+    }
+
+    .submit{
+        cursor: pointer;
+        margin-top: 20px;
+        border: none;
+        background-color: #ef3737;
+        color: white;
+        font-size: 20px;
+        padding: 6px;
+    }
+    .submit:hover{
+        background-color: #1e1e1e;
+    }
+}

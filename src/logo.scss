@@ -1,0 +1,34 @@
+.logo_container{
+        height: 600px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+    #rombo{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transform: rotate(45deg) skew(27deg, 27deg);
+        box-shadow: 0 0 0 40px #1d1d1d;
+        position: absolute;
+    }
+    #circulo{
+        position: absolute;
+        z-index: 9;
+        height: 45px;
+        width: 45px;
+        background-color: #ef3737;
+        border-radius: 50%;
+        box-shadow: 0 0 0 35px white,
+        0 0 0 65px #1d1d1d,
+        0 0 0 75px white
+        ;
+    }
+}
+

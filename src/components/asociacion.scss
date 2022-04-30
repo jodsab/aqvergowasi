@@ -1,0 +1,85 @@
+.asociacion_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 0;
+
+    .asociacion{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        
+
+        h4{
+            font-size: 30px;
+            margin: 10px auto;
+            color: #ef3737;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    p{
+        font-size: 21px;
+        margin: 10px 0 0 0;
+    }
+
+    .Nuestro_valores{
+        font-size: 30px;
+        margin: 30px auto 10px;
+    }
+
+    .lista_valores{
+/*         display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        gap: 25px;
+
+        list-style-type: none;
+        margin: 10px auto 0;
+        padding: 0;
+        width: 70%;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 1px solid #ef3737;
+            width: 320px;
+
+            strong{
+                color: white;
+                background-color: #ef3737;
+                width: 100%;
+                text-align: center;
+                padding: 8px 0;
+                font-size: 19px;
+            }
+            p{
+                text-align: center;
+                font-size: 17px;
+                width: 90%;
+                margin: 12px auto;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+
+    .asociacion_container{
+        height: auto;
+        .asociacion{
+            width: 85%;
+
+        }
+
+    }
+}

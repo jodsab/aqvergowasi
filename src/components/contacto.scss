@@ -1,0 +1,133 @@
+.contacto_container{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 45px;
+    box-shadow: 1px 1px 3px black;
+    background-color: white;
+    border-radius: 15px;
+
+    .left_contacto{
+        .logo_msj{
+            height: 150px;
+        }
+        .left_down_contacto{
+            .contacto_flex{
+                display: flex;
+                align-items: center;
+                p{
+                    .icon_left{
+                        font-size: 35px;
+                        color: #ef3737;
+                        padding: 10px;
+                    } 
+                }
+            }
+        }        
+    }
+
+    .formulario_contacto{
+        border-left: 1px solid #1e1e1e;
+        padding-left: 30px;
+
+        input{
+            border: none;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(170, 170, 170, 0.1);
+        }
+        input:focus{
+            outline: 0;
+            background-color: white;
+        }
+
+        p{
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(165, 165, 165);
+
+            .icon{
+                padding: 8px;
+                color: rgb(167, 167, 167);
+            }
+        }
+
+        textarea{
+            width: 95%;
+            height: 100px;
+            font-family: Roboto, sans-serif;
+            padding: 8px;
+            resize: none;
+            border: 1px solid rgb(165, 165, 165);
+        }
+
+        textarea:focus{
+            outline: 1px;
+        }
+
+        button{
+            color: white;
+            border: none;
+            background-color: #ef3737;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #1e1e1e;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contacto_container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding: 0 8px;
+        box-shadow: none;
+        background-color: white;
+
+    
+        .left_contacto{
+            width: 95%;
+            margin: auto;
+
+            .left_down_contacto{
+                .contacto_flex{
+                    display: flex;
+                    align-items: center;
+                    p{
+                        font-size: 14px;
+                        padding: 0;
+                        margin: 2px;
+
+                        .icon_left{
+                            font-size: 22px;
+                            color: #ef3737;
+                            padding: 10px;
+                        } 
+                    }
+                }
+            }        
+        }
+    
+        .formulario_contacto{
+            width: 95%;
+            margin: auto;
+            margin-bottom: 10px;
+            border: none;
+            padding: 0;
+
+            p{
+                width: 90%;
+                margin: 13px auto;
+            }
+        }
+    }
+}
+

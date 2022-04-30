@@ -1,0 +1,253 @@
+.close_btn{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    color: #ef3737;
+}
+
+.close_btn:hover{
+    color: #1e1e1e;
+}
+
+.headercontainer{
+    min-height: 70px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px 3px 12px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 999999999;
+
+
+
+    .contactox{
+        padding-right: 20px;
+    }
+
+    .img_logo{
+        height: 95px;
+    }
+
+    .icons{
+        color: #ef3737;
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    button.textuser{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border: none;
+        font-size: 16px;
+        color: white;
+        background-color: #ef3737;
+        border-radius: 25px;
+        padding: 1px 18px 1px 12px;
+        
+        .user{
+            color: white;
+        }
+
+    }
+
+    button.textuser:hover{
+        background-color: #3e3e3e;
+    }
+
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .div_nombre{
+            border: none;
+            cursor:pointer;
+            background-color: #ef3737;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            color: white;
+            .p_nombre{
+                padding: 7px;
+                display: flex;
+                align-items: center;
+            }
+
+            .icons{
+                color: white;
+                margin: 0;
+                padding: 6px 0 2px 6px;
+            }
+        }
+
+        .div_nombre:hover{
+            background-color: #1e1e1e;
+        }
+    }
+    
+    p{
+        padding: 0;
+        font-size: 15px;
+        margin: 0;
+    }
+
+}
+
+.div_perfil_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.div_perfil_modal.show{
+    display: flex;
+}
+
+.div_login_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .ventanareal{
+        position: relative;
+
+        .close_btn{
+            cursor: pointer;
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            color: #ef3737;
+            font-size: 40px;
+            top: -20px;
+            right: -25px;
+        }
+        .close_btn:hover{
+            color: #1e1e1e;
+        }
+    }
+
+
+}
+.div_perfil_modal{
+    
+    .ventanareal{
+        position: relative;
+        .div_perfil{
+
+        }
+        .close_btn{
+            position: absolute;
+            top: -20px;
+            right: -25px;
+        }
+    }
+}
+
+.div_login_modal.show{
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .headercontainer{
+        min-height: 70px;
+        max-height: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 12px 3px 12px;
+
+
+    
+        .img_logo{
+            height: 85px;
+        }
+    
+        .icons{
+            color: #ef3737;
+            font-size: 20px;
+            padding: 8px;
+        }
+    
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p{
+            padding: 0;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .user{
+            font-size: 27px;
+        }
+    
+        .textuser{
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headercontainer{
+        display: none;
+    }
+    
+    .flexdibujo{
+        position: fixed;
+        top:0;
+        right: 0;
+        margin: 10px;
+
+        .div_nombre{
+            border: none;
+            cursor:pointer;
+            background-color: #ef3737;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            color: white;
+
+            .icons{
+                margin: 4px;
+            }
+
+        }
+        .textuser2{
+            border: none;
+            cursor:pointer;
+            background-color: #ef3737;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 6px 12px;
+            font-size: 16px;
+            .user{
+                margin-right: 4px;
+            }
+        }
+    }
+
+}
+

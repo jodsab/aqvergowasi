@@ -1,0 +1,9 @@
+.espacio_container{
+    height: 150px;
+}
+
+@media only screen and (max-width: 650px){
+    .espacio_container{
+        height: 72px;
+    }
+}
