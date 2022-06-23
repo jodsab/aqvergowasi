@@ -1,11 +1,5 @@
 import React from 'react'
 import components from '../components/exportComponents'
-import AnimatedCubeSlider from '../ideas/AnimatedCubeSlider'
-
-import HeaderCel from '../componentscel/HeaderCel'
-import Header from '../components/Header'
-import FranjaContacto from '../componentscel/FranjaContacto'
-import EspacioTop from '../componentscel/EspacioTop'
 
 import './inicio.scss';
 

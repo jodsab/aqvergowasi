@@ -1,10 +1,7 @@
 import React, {useState} from 'react'
 import Logo from '../Logo'
 
-import {AiOutlineCloseCircle} from 'react-icons/ai'
-
 import AnimatedCubeSlider from '../ideas/AnimatedCubeSlider'
-import { Ventanausuario } from '../ventanausuario/Ventanausuario'
 
 //styles
 import './portada.scss'

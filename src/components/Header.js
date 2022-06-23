@@ -10,12 +10,10 @@ import { getUserEmail } from '../helpers/auth-localstorage'
 import {MdAttachEmail} from 'react-icons/md'
 import {BsTelephone} from 'react-icons/bs'
 import {FaRegUser} from 'react-icons/fa'
-import {AiOutlineFieldTime} from 'react-icons/ai'
 
 //Styles
 import './header.scss'
-import exportusuario from '../ventanausuario/exportusuario'
-import { Ventanausuario } from '../ventanausuario/Ventanausuario'
+import ModalUserTemplate from './organisms/ModalUserTemplate'
 
 function Header() {
 
@@ -78,7 +76,6 @@ function Header() {
             <div className={divPerfil ? 'div_perfil_modal show': 'div_perfil_modal'}>
                 <div className='ventanareal'>
                     <div className='div_perfil' onClick={()=>{setDivPerfil(false)}} >
-                        <exportusuario.Perfil usuario={getUserEmail()} />
 
                     </div>
                     <button className='close_btn' onClick={()=>{setDivPerfil(false)}} >
@@ -91,7 +88,7 @@ function Header() {
             }
             <div className={divLogin ? 'div_login_modal show': 'div_login_modal'}>
                 <div className='ventanareal'>
-                <exportusuario.Ventanausuario />
+                <ModalUserTemplate />
                     <button className='close_btn' onClick={()=>{setDivLogin(false)}} >
                         <AiOutlineCloseCircle />
                     </button>
@@ -152,7 +149,7 @@ function Header() {
             <div className={divPerfil ? 'div_perfil_modal show': 'div_perfil_modal'}>
                 <div className='ventanareal'>
                     <div className='div_perfil' >
-                        <exportusuario.Perfil usuario={getUserEmail()} />
+                        
 
                     </div>
                     <button className='close_btn' onClick={()=>{setDivPerfil(false)}} >
@@ -165,7 +162,7 @@ function Header() {
             }
             <div className={divLogin ? 'div_login_modal show': 'div_login_modal'}>
                 <div className='ventanareal'>
-                <exportusuario.Ventanausuario />
+                <ModalUserTemplate />
                     <button className='close_btn' onClick={()=>{setDivLogin(false)}} >
                         <AiOutlineCloseCircle />
                     </button>

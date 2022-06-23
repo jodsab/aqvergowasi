@@ -9,7 +9,6 @@ import {BiCopyright} from 'react-icons/bi'
 
 //stlyes
 import './footer.scss'
-import { Ventanausuario } from '../ventanausuario/Ventanausuario'
 
 function Footer() {
     return (
