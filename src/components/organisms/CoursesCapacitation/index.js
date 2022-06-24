@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //styles
-import "./formacioncapacitacion.scss";
+import "./styles.scss";
 
-import { fetchPost } from "../api/fetchpost";
+import { fetchPost } from "../../../api/fetchpost";
 const URL_OBTENER_CURSOS = "https://aqvergowasi.com/oficial/cursos/obtenercursos.php";
 
-function FormacionCapacitacion() {
+function CoursesCapacitation() {
   const [cursos, setCursos] = useState([]);
 
   const fetchCursos = async () => {
@@ -55,4 +55,4 @@ function FormacionCapacitacion() {
   );
 }
 
-export default FormacionCapacitacion;
+export default CoursesCapacitation;

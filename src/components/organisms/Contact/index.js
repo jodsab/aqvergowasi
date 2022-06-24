@@ -6,7 +6,7 @@ import {MdEmail} from 'react-icons/md'
 import {BsTelephone} from 'react-icons/bs'
 
 //styles
-import './contacto.scss'
+import './styles.scss'
 
 function Contacto() {
     return (

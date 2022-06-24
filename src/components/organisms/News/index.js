@@ -1,7 +1,7 @@
 import React from 'react'
-import './novedades.scss'
+import './styles.scss'
 
-function Novedades() {
+function News() {
     return (
         <div id='novedades' className='novedades_container'>
             <h3>
@@ -23,4 +23,4 @@ function Novedades() {
     )
 }
 
-export default Novedades
+export default News

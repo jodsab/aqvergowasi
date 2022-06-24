@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './logo.scss'
+import './styles.scss'
 
-function Logo() {
+function AELogo() {
     return (
         <div className='logo_container'>
             <div id='rombo'>
@@ -16,4 +16,4 @@ function Logo() {
     )
 }
 
-export default Logo
+export default AELogo

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './asociacion.scss'
+import './styles.scss'
 
 function Asociacion() {
     return (

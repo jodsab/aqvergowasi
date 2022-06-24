@@ -1,14 +1,13 @@
-import React, {useState} from 'react'
-import Logo from '../Logo'
+import React from 'react'
 
-import AnimatedCubeSlider from '../ideas/AnimatedCubeSlider'
+import Logo from '../../molecules/AELogo'
+
+import AnimatedCubeSlider from '../../../ideas/AnimatedCubeSlider'
 
 //styles
-import './portada.scss'
+import './styles.scss'
 
 function Portada() {
-
-    const [divLogin, setDivLogin] = useState(false);
 
     return (
         <div id='home' className='portada_container'>
@@ -21,7 +20,7 @@ function Portada() {
                         bienestar de los trabajadores y a la
                         optimización de resultados
                     </p>
-                    <button /* onClick={()=>{setDivLogin(true)}} */ >COMENZAR</button>
+                    <button>COMENZAR</button>
                 </div>
             </div>
             <div className='logo_css_container'>

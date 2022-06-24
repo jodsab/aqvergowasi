@@ -8,7 +8,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {BiCopyright} from 'react-icons/bi'
 
 //stlyes
-import './footer.scss'
+import './styles.scss'
 
 function Footer() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import './nuestroequipo.scss'
+import './styles.scss'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,7 +13,7 @@ import "swiper/components/effect-coverflow/effect-coverflow.scss";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-function NuestroEquipo() {
+function OurTeam() {
 
 
     return (
@@ -38,7 +38,7 @@ function NuestroEquipo() {
       >
         <SwiperSlide>
         <div className='carta'>
-                    <img src={require('../assets/chicas/Melissa.png').default} />
+                    <img src={require('../../../assets/chicas/Melissa.png').default} />
                     <div className='carta_msj'>
                         <p className='nombre'>Melissa Bohórquez</p>
                         <h4>Especialista en SST & Ergonomía</h4>
@@ -48,7 +48,7 @@ function NuestroEquipo() {
         </SwiperSlide>
         <SwiperSlide>
         <div className='carta'>
-                    <img src={require('../assets/chicas/Cindy.png').default} />
+                    <img src={require('../../../assets/chicas/Cindy.png').default} />
                     <div className='carta_msj'>
                       <p className='nombre'>Cindy Cárdenas</p>
                         <h4>Especialista en Gestión de Riesgos</h4>
@@ -62,4 +62,4 @@ function NuestroEquipo() {
     )
 }
 
-export default NuestroEquipo
+export default OurTeam

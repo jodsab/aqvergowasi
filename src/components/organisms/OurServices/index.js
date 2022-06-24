@@ -6,9 +6,9 @@ import {FaBookReader} from 'react-icons/fa'
 import {FaToolbox} from 'react-icons/fa'
 
 //styles
-import './nuestrosservicios.scss'
+import './styles.scss'
 
-function NuestrosServicios() {
+function OurServices() {
     return (
         <div id='servicios' className='servicios_container'>
             <h3>NUESTROS SERVICIOS</h3>
@@ -33,4 +33,4 @@ function NuestrosServicios() {
     )
 }
 
-export default NuestrosServicios
+export default OurServices

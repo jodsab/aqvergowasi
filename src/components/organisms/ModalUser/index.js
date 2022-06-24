@@ -5,7 +5,7 @@ import AERegister from "../../molecules/AERegister";
 
 import './styles.scss'
 
-const ModalUserTemplate = () => {
+const ModalUser = () => {
   const [divLogin, setDivLogin] = useState(false);
   const [logActive, setLogActive] = useState(false);
 
@@ -36,4 +36,4 @@ const ModalUserTemplate = () => {
   );
 };
 
-export default ModalUserTemplate;
+export default ModalUser;

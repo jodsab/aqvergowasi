@@ -5,7 +5,7 @@ import {Link} from 'react-scroll'
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 
 //styles
-import './navbar.scss'
+import './styles.scss'
 
 function Navbar() {
 

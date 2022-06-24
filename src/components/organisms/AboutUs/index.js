@@ -1,9 +1,9 @@
 import React from 'react'
 
 //stlyes
-import './nuestrahistoria.scss'
+import './styles.scss'
 
-function NuestraHistoria() {
+function AboutUs() {
     return (
         <div id='history' className='historia_container' >
             <div className='cuadro'>
@@ -30,4 +30,4 @@ function NuestraHistoria() {
     )
 }
 
-export default NuestraHistoria
+export default AboutUs
