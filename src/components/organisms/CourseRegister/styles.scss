@@ -1,0 +1,129 @@
+.coloreado_container{
+    width: 100%;
+    background: linear-gradient(90deg, #1e1e1e , #ef3737);
+
+    .contenido_textual{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        gap: 50px;
+        padding: 40px;
+
+        .lado_izquierdo{
+            
+            .texto{
+                color: white;
+                .curso_nombre{
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: white;
+                    margin: 0;
+                }
+                .curso_descripcion{
+                    margin: 20px auto;
+                }
+
+            }
+            
+            .btn{
+                display: flex;
+                gap: 20px;
+                .btn_inscribirse{
+                    text-align: center;
+                    color: white;
+                    background-color: rgb(255, 196, 1);
+                    border: none;
+                    padding: 6px 14px;
+                    cursor: pointer;
+                    p{
+                        margin: 4px auto;
+                        font-weight: 600;
+                    }
+
+                    .inscribirse{
+                        font-size: 16px;
+                    }
+                    .start{
+                        font-size: 12px;
+                    }
+                }
+                .btn_inscribirse:hover{
+                    background-color: rgb(255, 166, 1);
+                }
+                .acceso{
+                    color: white;
+                }
+            }
+
+            .inscritos{
+                color: white;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .coloreado_container{
+    
+        .contenido_textual{
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            width: 90%;
+            padding: 15px 0 25px 0;
+
+            .lado_izquierdo{
+                
+                .texto{
+
+                    .curso_nombre{
+
+                    }
+                    .curso_descripcion{
+
+                    }
+
+                }
+                
+                .btn{
+
+                    .btn_inscribirse{
+
+                        p{
+
+                        }
+
+                        .inscribirse{
+
+                        }
+                        .start{
+
+                        }
+                    }
+                    .btn_inscribirse:hover{
+
+                    }
+                    .acceso{
+
+                    }
+                }
+
+                .inscritos{
+
+                }
+            }
+
+            .img_div{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 80%;
+                }
+            }
+
+        }
+    }
+}

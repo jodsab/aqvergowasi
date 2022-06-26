@@ -1,0 +1,108 @@
+.aprenderas{
+    width: 80%;
+    margin: 20px auto;
+    color: #616161;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    .izquierda{
+        .queaprenderas{
+            font-weight: 600;
+        }
+        .checks{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 40px;
+            div{
+                display: flex;
+                .icon{
+                    color: green;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .derecha{
+        padding: 40px 0;
+        .derecha_nose{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .cada_div{
+                display: flex;
+
+                .icon{
+                    color: red;
+                    font-size: 25px;
+                    padding: 8px;
+                    margin-right: 15px;
+                    border-radius: 50%;
+                    border: 2px solid #dbdbdb;
+                }
+                div{
+                    strong{
+                        color: black;
+                    }
+                    .sub{
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .aprenderas{
+        width: 90%;
+        margin: 10px auto;
+        grid-template-columns: 1fr;
+        .izquierda{
+            .queaprenderas{
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .checks{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 40px;
+                div{
+                    display: flex;
+                    .icon{
+                        color: green;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .derecha{
+            padding: 20px 0;
+            .derecha_nose{
+
+                .cada_div{
+                    display: flex;
+
+                    .icon{
+                        color: red;
+                        font-size: 25px;
+                        padding: 8px;
+                        margin-right: 15px;
+                        border-radius: 50%;
+                        border: 2px solid #dbdbdb;
+                    }
+                    div{
+                        strong{
+                            color: black;
+                        }
+                        .sub{
+                            margin: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

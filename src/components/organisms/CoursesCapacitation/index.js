@@ -5,14 +5,15 @@ import { Link } from "react-router-dom";
 import "./styles.scss";
 
 import { fetchPost } from "../../../api/fetchpost";
-const URL_OBTENER_CURSOS = "https://aqvergowasi.com/oficial/cursos/obtenercursos.php";
+const URL_OBTENER_CURSOS =
+  "https://aqvergowasi.com/oficial/cursos/obtenercursos.php";
 
 function CoursesCapacitation() {
   const [cursos, setCursos] = useState([]);
 
   const fetchCursos = async () => {
     const data = {
-      "user": "admin",
+      user: "admin",
     };
 
     const rspJson = await fetchPost(URL_OBTENER_CURSOS, data);
@@ -25,31 +26,40 @@ function CoursesCapacitation() {
   }, []);
 
   return (
-    <div id='cursos' className="formacion_container">
+    <div id="cursos" className="formacion_container">
       <div className="contenido_container">
         <h3>NUESTROS CURSOS</h3>
         <div className="cursos_container">
           <div className="div_section_container">
             <h4>Cursos: Capacítate y tu empresa evitará multas</h4>
             <ul className="ul_divs">
-              {
-              cursos.map(e => (
+              {cursos.map((e) => (
                 <li>
                   <div className="curso_container">
-                    <img src={`data:image/jpg;base64,${e.curso_foto}`} alt={e.curso_nombre} />
+                    <img
+                      src={`data:image/jpg;base64,${e.curso_foto}`}
+                      alt={e.curso_nombre}
+                    />
 
                     <div className="descripcion">
                       <p className="curso_nombre">{e.curso_nombre}</p>
-                      <p className="curso_horas"> Curso: {e.curso_horas} horas académicas</p>
-                      <p className="curso_fecha">Disponible: desde {e.curso_apertura}</p>
+                      <p className="curso_horas">
+                        {" "}
+                        Curso: {e.curso_horas} horas académicas
+                      </p>
+                      <p className="curso_fecha">
+                        Disponible: desde {e.curso_apertura}
+                      </p>
                     </div>
                   </div>
-                  <button><Link to={`/cursos/${e.id_cursos}`}>Más información</Link></button>
+                  <Link to={`/cursos/${e.id_cursos}`}>
+                    <button>Más información</button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
+        </div>                                     
       </div>
     </div>
   );

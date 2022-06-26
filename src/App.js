@@ -7,7 +7,7 @@ import Inicio from "./pages/Inicio/index.js";
 
 import HeaderCel from "./componentscel/HeaderCel";
 import EspacioTop from "./componentscel/EspacioTop";
-import { Curso } from "./components/cursos/Curso";
+import Course from "./pages/Course";
 import Header from "./components/organisms/Header";
 import Navbar from "./components/organisms/NavBar";
 import Footer from "./components/organisms/Footer";
@@ -46,7 +46,7 @@ function App() {
           {cursos.map((e, key) => (
             <Route
               path={`/cursos/${e.id_cursos}`}
-              element={<Curso datos={e} />}
+              element={<Course datos={e} />}
             ></Route>
           ))}
         </Routes>
