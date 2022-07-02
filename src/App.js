@@ -12,26 +12,14 @@ import Header from "./components/organisms/Header";
 import Navbar from "./components/organisms/NavBar";
 import Footer from "./components/organisms/Footer";
 
-import { fetchPost } from "./api/fetchpost";
-
-const URL_OBTENER_CURSOS =
-  "https://aqvergowasi.com/oficial/cursos/obtenercursos.php";
+import CoursesService from "./shared/services/courses";
 
 function App() {
   const [cursos, setCursos] = useState([]);
 
-  const fetchCursos = async () => {
-    const data = {
-      user: "admin",
-    };
-
-    const rspJson = await fetchPost(URL_OBTENER_CURSOS, data);
-    setCursos(rspJson);
-    console.log(rspJson);
-  };
-
   useEffect(async () => {
-    await fetchCursos();
+    const data = await CoursesService.getCourses();
+    console.log(data);
   }, []);
 
   return (
@@ -45,7 +33,7 @@ function App() {
           <Route path={"/"} element={<Inicio />}></Route>
           {cursos.map((e, key) => (
             <Route
-              path={`/cursos/${e.id_cursos}`}
+              path={`/cursos/${e._id}`}
               element={<Course datos={e} />}
             ></Route>
           ))}
